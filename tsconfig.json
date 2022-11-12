@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "module": "ESNext",
+        "target": "es5", // в какую спецификацию компилируем: для поддержки большинства браузеров
+        "jsx": "react-jsx", // чтобы в каждом файле не импортировать react
+        "allowJs": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".", // Для абсолютного импорта
+        "paths": {
+            "*": ["./src/*"] // Все абсолютные экспорты и импорты будут идти из src 
+        }
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
+}
